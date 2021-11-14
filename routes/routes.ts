@@ -1,5 +1,5 @@
 //@ts-ignore
-import { Router } from "../deps.ts"
+import { Router } from "../config/deps.ts"
 //@ts-ignore
 import {register} from "../controllers/auth-controller.ts"
 

@@ -9,3 +9,7 @@ export {
   Context
   //@ts-ignore
 } from "https://deno.land/x/oak/mod.ts";
+
+//postgress
+//@ts-ignore
+export { Client } from "https://deno.land/x/postgres/mod.ts";

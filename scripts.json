@@ -13,7 +13,7 @@
   "logger": {
     "debug": false
   },
-"tsconfig": "tsconfig.json"
+"tsconfig": "./config/tsconfig.json"
 
 
   
