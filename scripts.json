@@ -1,0 +1,20 @@
+{
+  "$schema": "https://deno.land/x/denon@2.4.9/schema.json",
+  "scripts": {
+    "start": {
+      "cmd": "deno run  app.ts  ",
+      "allow": ["net", "read", "env"],
+      "desc": "run my app.ts file",
+      "env": {
+        "EXAMPLE_ENV": "Hi I am an example of env within denon script"
+      }
+    }
+  },
+  "logger": {
+    "debug": false
+  },
+"tsconfig": "tsconfig.json"
+
+
+  
+}
