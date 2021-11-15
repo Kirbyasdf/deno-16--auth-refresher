@@ -6,13 +6,13 @@ import { Application } from "./config/deps.ts";
 import {router} from "./routes/routes.ts"
 //@ts-ignore
 import  dbClient from "./db/dbClient.ts"
-
-
-const app = new Application()
+//db test
 //@ts-ignore
 const res = await dbClient.query('select now()')
-
 console.log("database test:", res.rows[0])
+
+const app = new Application()
+
 
 app.use(router.routes())
 app.use(router.allowedMethods())
