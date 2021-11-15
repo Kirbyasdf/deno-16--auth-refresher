@@ -7,14 +7,13 @@ export const register = async (ctx: Context) =>{
 
     try {
         const req = await ctx.request.body().value
-        const {username, password, first_name, last_name } = req
+        const {username, password} = req
 
         const text = "INSERT INTO Users (username, pwhash) VALUES ($1, $2)"
         const values = [
             username, password
         ]
 
-        
 const res = await client.query({text, args: values})
       console.log(res)
 
